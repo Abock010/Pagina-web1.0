@@ -1,1 +1,232 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Playbook de IA para el Sector Público</title>
+  <meta name="description" content="Playbook de IA generativa para funcionarios públicos: estructura y navegación similares al recurso de referencia, con diseño propio y contenido editable." />
+  <style>
+    :root{
+      /* Tema claro inspirado en sitios institucionales */
+      --bg: #ffffff;
+      --ink: #0f172a;    /* slate-900 */
+      --muted:#475569;   /* slate-600 */
+      --line:#e5e7eb;    /* gray-200 */
+      --card:#f8fafc;    /* slate-50 */
+      --brand:#0b63ce;   /* azul accesible */
+      --brand-dark:#084f9c;
+      --accent:#16a34a;  /* verde para etiquetas */
+      --radius: 14px;
+      --shadow: 0 8px 24px rgba(2,6,23,.06);
+      --max: 1120px;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{margin:0; font-family: Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Apple Color Emoji","Segoe UI Emoji"; background:var(--bg); color:var(--ink); line-height:1.6}
+    a{color:var(--brand); text-decoration:none}
+    a:hover{text-decoration:underline}
+    .wrap{max-width:var(--max); margin-inline:auto; padding-inline:clamp(16px,3vw,28px)}
 
+    /* Barra superior */
+    header.site{position:sticky; top:0; z-index:20; background:#fff; border-bottom:1px solid var(--line)}
+    .bar{display:flex; align-items:center; gap:16px; padding:14px 0}
+    .brand{font-weight:700; letter-spacing:.2px}
+    .brand small{font-weight:600; color:var(--muted)}
+
+    /* Hero al estilo playbook institucional */
+    .hero{padding: clamp(28px, 6vw, 64px) 0}
+    .crumbs{font-size:.9rem; color:var(--muted)}
+    .crumbs a{color:var(--muted)}
+    h1{font-size: clamp(1.9rem, 3.6vw, 3rem); line-height:1.15; margin:8px 0}
+    .lead{font-size: clamp(1rem,1.4vw,1.125rem); color:var(--muted); max-width: 70ch}
+    .cta{display:flex; gap:12px; margin-top:16px; flex-wrap:wrap}
+    .btn{display:inline-flex; align-items:center; gap:8px; border-radius:999px; padding:10px 16px; font-weight:600; border:1px solid var(--line); background:#fff; color:var(--ink)}
+    .btn.primary{background:var(--brand); color:#fff; border-color:var(--brand)}
+    .btn.primary:hover{background:var(--brand-dark)}
+
+    /* Píldoras de navegación (capítulos / categorías) */
+    .pillnav{display:flex; flex-wrap:wrap; gap:10px; margin-top:20px}
+    .pill{border:1px solid var(--line); background:#fff; border-radius:999px; padding:8px 12px; font-weight:600}
+
+    /* Secciones tipo tarjetas 3-col */
+    .section{padding:32px 0; border-top:1px solid var(--line)}
+    .section h2{font-size: clamp(1.25rem, 2.2vw, 1.75rem); margin: 6px 0 12px}
+    .grid{display:grid; gap:16px}
+    .cards{grid-template-columns: repeat(12, 1fr)}
+    .cards > .card{grid-column: span 4; background:var(--card); border:1px solid var(--line); border-radius: var(--radius); padding:18px; box-shadow: var(--shadow)}
+    @media (max-width: 960px){ .cards > .card{grid-column: span 6} }
+    @media (max-width: 640px){ .cards > .card{grid-column: span 12} }
+    .card h3{margin:6px 0 6px; font-size:1.05rem}
+    .card p{margin:0 0 10px; color:var(--muted)}
+    .tag{display:inline-flex; align-items:center; gap:6px; font-size:.85rem; background:#ecfdf5; color:#065f46; border:1px solid #bbf7d0; border-radius:999px; padding:4px 8px}
+    .itemlist{margin:8px 0 0; padding-left: 18px}
+
+    /* Índice lateral opcional (On this page) */
+    .layout{display:grid; grid-template-columns: 1fr 280px; gap:24px}
+    @media (max-width: 1060px){ .layout{grid-template-columns: 1fr} }
+    .toc{position:sticky; top:78px; align-self:start}
+    .toc .card{background:#fff; border:1px solid var(--line); border-radius: var(--radius); padding:16px}
+    .toc h4{margin:.3rem 0 8px; font-size:.95rem; color:var(--muted); text-transform:uppercase; letter-spacing:.08em}
+    .toc a{display:block; padding:6px 0; color:var(--muted)}
+
+    footer.site{margin-top:40px; border-top:1px solid var(--line); padding:28px 0; color:var(--muted)}
+  </style>
+</head>
+<body>
+  <header class="site">
+    <div class="wrap bar">
+      <div class="brand">Playbooks <small>/ IA generativa</small></div>
+    </div>
+  </header>
+
+  <section class="hero wrap">
+    <nav class="crumbs" aria-label="migas">
+      <a href="#">Playbooks</a> / <span>IA generativa para el sector público</span>
+    </nav>
+    <h1>IA generativa para funcionarios públicos</h1>
+    <p class="lead">Una guía práctica para usar IA de forma responsable: ideas para simplificar tareas diarias, hacer sentido de los datos más rápido y facilitar el acceso a recursos institucionales.</p>
+    <div class="cta">
+      <a class="btn primary" href="#simplificar">Explorar capítulos</a>
+      <a class="btn" href="#descargas">Descargar en PDF</a>
+    </div>
+    <div class="pillnav" aria-label="categorías">
+      <span class="pill">Uso responsable</span>
+      <span class="pill">Productividad</span>
+      <span class="pill">Datos & evidencia</span>
+      <span class="pill">Recursos</span>
+    </div>
+  </section>
+
+  <div class="wrap layout">
+    <main>
+      <!-- Bloque 1: Simplificar tareas diarias -->
+      <section id="simplificar" class="section">
+        <h2>Simplificar tareas diarias</h2>
+        <div class="grid cards">
+          <div class="card">
+            <span class="tag">Borradores</span>
+            <h3>Redacción asistida</h3>
+            <p>Modelos de memorandos, correos y comunicados con revisión humana.</p>
+            <ul class="itemlist">
+              <li><a href="#">Plantilla de memo</a></li>
+              <li><a href="#">Guía de estilo</a></li>
+            </ul>
+          </div>
+          <div class="card">
+            <span class="tag">Reuniones</span>
+            <h3>Minutas y resúmenes</h3>
+            <p>Cómo capturar acuerdos y tareas, y validar resultados.</p>
+            <ul class="itemlist">
+              <li><a href="#">Checklist de verificación</a></li>
+              <li><a href="#">Flujo sugerido</a></li>
+            </ul>
+          </div>
+          <div class="card">
+            <span class="tag">Traducción</span>
+            <h3>Traducción y adaptación</h3>
+            <p>Buenas prácticas para traducir sin perder contexto institucional.</p>
+            <ul class="itemlist">
+              <li><a href="#">Glosario institucional</a></li>
+              <li><a href="#">Ejemplos de prompts</a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Bloque 2: Hacer sentido de los datos -->
+      <section id="datos" class="section">
+        <h2>Hacer sentido de los datos más rápido</h2>
+        <div class="grid cards">
+          <div class="card">
+            <span class="tag">Exploración</span>
+            <h3>Resúmenes de datasets</h3>
+            <p>Describe tablas y encuentra valores atípicos con validación.</p>
+            <ul class="itemlist">
+              <li><a href="#">Plantilla de QA</a></li>
+              <li><a href="#">Ejemplo CSV</a></li>
+            </ul>
+          </div>
+          <div class="card">
+            <span class="tag">Visualización</span>
+            <h3>Gráficos rápidos</h3>
+            <p>Genera gráficos simples y comprueba la consistencia.</p>
+            <ul class="itemlist">
+              <li><a href="#">Guía de gráficos</a></li>
+              <li><a href="#">Casos prácticos</a></li>
+            </ul>
+          </div>
+          <div class="card">
+            <span class="tag">Privacidad</span>
+            <h3>Datos sensibles</h3>
+            <p>Políticas de anonimización y tratamiento adecuado.</p>
+            <ul class="itemlist">
+              <li><a href="#">Checklist de PII</a></li>
+              <li><a href="#">Ejemplos de mitigación</a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Bloque 3: Facilitar acceso a recursos -->
+      <section id="recursos" class="section">
+        <h2>Facilitar el acceso a recursos</h2>
+        <div class="grid cards">
+          <div class="card">
+            <span class="tag">Plantillas</span>
+            <h3>Biblioteca de documentos</h3>
+            <p>Políticas, DPIA, acuerdos de confidencialidad y más.</p>
+            <ul class="itemlist">
+              <li><a href="#">Política de IA</a></li>
+              <li><a href="#">DPIA (modelo)</a></li>
+            </ul>
+          </div>
+          <div class="card">
+            <span class="tag">Capacitación</span>
+            <h3>Formación y guías</h3>
+            <p>Rutas de aprendizaje y sesiones para equipos.</p>
+            <ul class="itemlist">
+              <li><a href="#">Agenda de taller</a></li>
+              <li><a href="#">Diapositivas base</a></li>
+            </ul>
+          </div>
+          <div class="card">
+            <span class="tag">Acceso</span>
+            <h3>Catálogo de herramientas</h3>
+            <p>Listado autorizado con criterios de uso responsable.</p>
+            <ul class="itemlist">
+              <li><a href="#">Matriz de riesgos</a></li>
+              <li><a href="#">Solicitud de acceso</a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Descargas -->
+      <section id="descargas" class="section">
+        <h2>Descargas</h2>
+        <p>Puedes publicar aquí PDFs, hojas de ruta o documentos de referencia.</p>
+      </section>
+    </main>
+
+    <aside class="toc" aria-label="Índice de la página">
+      <div class="card">
+        <h4>En esta página</h4>
+        <nav id="toc-links"></nav>
+      </div>
+    </aside>
+  </div>
+
+  <footer class="site">
+    <div class="wrap">
+      <p>© 2025 — Tu Organización. Este diseño recrea la **estructura** de un playbook institucional (hero + categorías en tarjetas + índice lateral), con estilos propios y contenido editable.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Genera TOC a partir de h2
+    const toc = document.getElementById('toc-links');
+    const hs = [...document.querySelectorAll('main h2')];
+    toc.innerHTML = hs.map(h=>`<a href="#${h.parentElement.id}">${h.textContent}</a>`).join('');
+  </script>
+</body>
+</html>
